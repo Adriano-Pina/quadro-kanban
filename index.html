@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Adriano Pina">
+    <meta name="description" content="Organizar tarefas do dia!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Quadro Kanban!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="ico" href="img/favicon.ico">
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-body text-center">
+        <h1>Organize sua tarefa de uma forma Inteligente com o método Kanban!</h1>
+        <p>Método japonês, que muitas empresas usam para se organizar.</p>
+        <h6>Desenvolvido por: Adriano Pina</h6>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    A fazer
+                </div>
+                <div class="card-body">
+                    <input type="text" class="form-control mb-2" placeholder="Digite uma tarefa" id="inputTodo">
+                    <button class="btn btn-primary btn-block" onclick="addTask('todo')">Adicionar Tarefa</button>
+                    <div id="todo">
+                        <!-- Aqui serão adicionadas as tarefas a fazer -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-warning">
+                    Em progresso
+                </div>
+                <div class="card-body">
+                    <input type="text" class="form-control mb-2" placeholder="Digite uma tarefa" id="inputInProgress">
+                    <button class="btn btn-primary btn-block" onclick="addTask('inProgress')">Adicionar Tarefa</button>
+                    <div id="inProgress">
+                        <!-- Aqui serão adicionadas as tarefas em progresso -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Concluído
+                </div>
+                <div class="card-body">
+                    <input type="text" class="form-control mb-2" placeholder="Digite uma tarefa" id="inputDone">
+                    <button class="btn btn-primary btn-block" onclick="addTask('done')">Adicionar Tarefa</button>
+                    <div id="done">
+                        <!-- Aqui serão adicionadas as tarefas concluídas -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script><!-- Caminho do código JavaScript -->
+
+</body>
+</html>
